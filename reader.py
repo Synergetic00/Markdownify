@@ -7,7 +7,8 @@ def getWordContent(path):
 def getExcelContent(path):
     with zipfile.ZipFile(path, "r") as docx:
         strings = str(docx.read('xl/sharedStrings.xml').decode('ascii'))
-        return [strings]
+        sheet1 = str(docx.read('xl/worksheets/sheet1.xml').decode('ascii'))
+        return [strings, sheet1]
 
 #print(getWordContent('word01.docx'))
 print(getExcelContent('excel01.xlsx'))
