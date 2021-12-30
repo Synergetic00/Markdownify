@@ -56,4 +56,4 @@ def makeBasicMarkdownTable(array, filename):
 
 #print(getWordContent('word01.docx'))
 
-makeBasicMarkdownTable(getExcelContent('excel01.xlsx'), 'mdExcel01')
+makeBasicMarkdownTable(getExcelContent('Book1.xlsx'), 'mdExcel02')
